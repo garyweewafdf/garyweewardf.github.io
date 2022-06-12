@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> CafeForHeroes - Menu </title>
+        <link rel="Stylesheet" type="text/css" href="StylesheetMenu.css"> 
+        <link rel="icon" type="image/png" href="MenuImages/Favicon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body> 
+        <div id="TopLogo">
+            <img src="MenuImages/hfh.png">
+            <div class="topnav">
+                <p> Menu </p>
+                <div id="myLinks">
+                  <a href="#Drinks">Drinks</a> <!-- # used for internal linking -->
+                  <a href="#Food">Food</a>
+                  <a href="#Cakes">Cakes</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="displayLinks()">
+                  <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <script>
+            function displayLinks(){
+              var link = document.getElementById("myLinks");
+              if (link.style.display === "block"){
+                link.style.display = "none";
+              } else { // If link is displayed then it will change to block (hidden)
+                link.style.display = "block";
+              }
+            }
+        </script>
+        <div id="MenuBody">
+            <div class="Category" id="Drinks">
+                <p> Drinks </p>
+            </div>
+            <div class="Product">
+                <div class="Description">
+                    <h2> Cappuccino </h2>
+                    <p> Dark, rich espresso combined with steamed milk, topped with a deep layer of foam.</p>
+                    <div class="Ingredients"> 
+                        <p> View Ingredients </p>
+                    </div>
+                    <button class="OrderButton"> Add to basket </button>
+                </div>
+                <img loading="lazy" src="MenuImages/Cappuccino.png"> <br style="clear: both;">
+            </div>
+            <hr>
+            <div class="Product">
+                <div class="Description">
+                    <h2> Caffe Americano </h2>
+                    <p> Espresso shots are topped with hot water to produce a light layer of cream.</p>
+                    <div class="Ingredients"> 
+                        <p> View Ingredients </p>
+                    </div>
+                    <button class="OrderButton"> Add to basket </button>
+                </div>
+                <img loading="lazy" src="MenuImages/CaffeAmericano.png"> <br style="clear: both;">
+            </div>
+            <hr>
+            <div class="Product">
+                <div class="Description">
+                    <h2> Flat White </h2>
+                    <p> Expertly steamed milk poured over two shots of espresso.</p>
+                    <div class="Ingredients"> 
+                        <p> View Ingredients </p>
+                    </div>
+                    <button class="OrderButton"> Add to basket </button>
+                </div>
+                <img loading="lazy" src="MenuImages/FlatWhite.png"> <br style="clear: both;">
+            </div>
+            <hr>
+            <div class="Product">
+                <div class="Description">
+                    <h2> Caffe Misto</h2>
+                    <p> Iconic Heroes coffee that's smooth, balanced and rich in flavour - perfect for every day.</p>
+                    <div class="Ingredients"> 
+                        <p> View Ingredients </p>
+                    </div>
+                    <button class="OrderButton"> Add to basket </button>
+                </div>
+                <img loading="lazy" src="MenuImages/CaffeMisto.png"> <br style="clear: both;">
+            </div>
+            <hr>
+            <div class="Product">
+                <div class="Description">
+                    <h2> Espresso </h2>
+                    <p> A shot of espresso with a rich flavour and caramel-like sweetness.</p>
+                    <div class="Ingredients"> 
+                        <p> View Ingredients </p>
+                    </div>
+                    <button class="OrderButton"> Add to basket </button>
+                </div>
+                <img loading="lazy" src="MenuImages/Espresso.png"> <br style="clear: both;">
+            </div>
+            <hr>
+            <div class="Product">
+                <div class="Description">
+                    <h2> latte Macchiato </h2>
+                    <p> Espresso shots over lightly aerated milk for a bold and roasty new way to sip.</p>
+                    <div class="Ingredients"> 
+                        <p> View Ingredients </p>
+                    </div>
+                    <button class="OrderButton"> Add to basket </button>
+                </div>
+                <img loading="lazy" src="MenuImages/LatteMacchiato.png"> <br style="clear: both;">
+            </div>
+            <hr>
+            <div class="Product">
+                <div class="Description">
+                    <h2> Filter Coffee </h2>
+                    <p> Iconic Heroes coffee that's smooth, balanced and rich in flavour - perfect for every day.</p>
+                    <div class="Ingredients"> 
+                        <p> View Ingredients </p>
+                    </div>
+                    <button class="OrderButton"> Add to basket </button>
+                </div>
+                <img loading="lazy" src="MenuImages/FilterCoffee.png"> <br style="clear: both;">
+            </div>
+            <hr>
+            <div class="Product">
+                <div class="Description">
+                    <h2> Iced White Chocolate Mocha </h2>
+                    <p> Espresso, milk and white chocolate flavoured sauce over ice.</p>
+                    <div class="Ingredients"> 
+                        <p> View Ingredients </p>
+                    </div>
+                    <button class="OrderButton"> Add to basket </button>
+                </div>
+                <img loading="lazy" src="MenuImages/IcedMocha.png"> <br style="clear: both;">
+            </div>
+            <div class="Category" id="Food">
+                <p> Food </p>
+            </div>
+            <div class="Product">
+                <div class="Description">
+                    <h2> Bacon Roll </h2>
+                    <p> Hickory smoked back and streaky bacon served in a classic soft roll.</p>
+                    <div class="Ingredients"> 
+                        <p> View Ingredients </p>
+                    </div>
+                    <button class="OrderButton"> Add to basket </button>
+                </div>
+                <img loading="lazy" src="MenuImages/Bacon.png"> <br style="clear: both;">
+            </div>
+            <hr>
+            <div class="Product">
+                <div class="Description">
+                    <h2> Tomato & Mozzarela Panini </h2>
+                    <p> Mozzarella and tomatoes with basil and red pepper pesto on a ciabatta.</p>
+                    <div class="Ingredients"> 
+                        <p> View Ingredients </p>
+                    </div>
+                    <button class="OrderButton"> Add to basket </button>
+                </div>
+                <img loading="lazy" src="MenuImages/MozzarelaPanini.png"> <br style="clear: both;">
+            </div>
+            <hr>
+            <div class="Product">
+                <div class="Description">
+                    <h2> BLT Sandwhich </h2>
+                    <p> Smoky beechwood bacon, juicy tomatoes, mayo and lettuce on malted bread.</p>
+                    <div class="Ingredients"> 
+                        <p> View Ingredients </p>
+                    </div>
+                    <button class="OrderButton"> Add to basket </button>
+                </div>
+                <img loading="lazy" src="MenuImages/BLT.png"> <br style="clear: both;">
+            </div>
+            <hr>
+            <div class="Product">
+                <div class="Description">
+                    <h2> All Day Breakfast Wrap </h2>
+                    <p> Seeded wrap with cscrambled egg, Monterey Jack cheese, sausage, bacon, spinach and tomato beans.</p>
+                    <div class="Ingredients"> 
+                        <p> View Ingredients </p>
+                    </div>
+                    <button class="OrderButton"> Add to basket </button>
+                </div>
+                <img loading="lazy" src="MenuImages/AllDayBreakfastWrap.png"> <br style="clear: both;">
+            </div>
+            <div class="Category" id="Cakes">
+                <p> Cakes </p>
+            </div>
+            <div class="Product">
+                <div class="Description">
+                    <h2> Lemon Loaf Cake </h2>
+                    <p> A moist lemon loaf cake topped with a lemon icing glaze and lemon zest.</p>
+                    <div class="Ingredients"> 
+                        <p> View Ingredients </p>
+                    </div>
+                    <button class="OrderButton"> Add to basket </button>
+                </div>
+                <img loading="lazy" src="MenuImages/LemonLoafCake.png"> <br style="clear: both;">
+            </div>
+            <hr>
+            <div class="Product">
+                <div class="Description">
+                    <h2> Carrot Cake </h2>
+                    <p> Fresh carrot, sultana and walnut mini loaf cake with a creamy oat frosting.</p>
+                    <div class="Ingredients"> 
+                        <p> View Ingredients </p>
+                    </div>
+                    <button class="OrderButton"> Add to basket </button>
+                </div>
+                <img loading="lazy" src="MenuImages/CarrotCake.png"> <br style="clear: both;">
+            </div>
+            <hr>
+            <div class="Product">
+                <div class="Description">
+                    <h2> Chocolate Caramel Shortbread </h2>
+                    <p> A shortbread base, topped with caramel and a layer of milk chocolate Caramel Drizzled with white chocolate.</p>
+                    <div class="Ingredients"> 
+                        <p> View Ingredients </p>
+                    </div>
+                    <button class="OrderButton"> Add to basket </button>
+                </div>
+                <img loading="lazy" src="MenuImages/ChocolateCaramelShortbread.png"> <br style="clear: both;">
+            </div>
+            <hr>
+            <div class="Product">
+                <div class="Description">
+                    <h2> Cinnamon Swirl </h2>
+                    <p> Sweet dough with cinnamon filling, sultanas and topped with a cream cheese style icing and orange zest.</p>
+                    <div class="Ingredients"> 
+                        <p> View Ingredients </p>
+                    </div>
+                    <button class="OrderButton"> Add to basket </button>
+                </div>
+                <img loading="lazy" src="MenuImages/CinnamonSwirl.png"> <br style="clear: both;">
+            </div>
+            <hr>
+            <div class="Product">
+                <div class="Description">
+                    <h2> Cookies & Cream Brownie </h2>
+                    <p> Chocolate brownie with swirls of cheesecake topped with mini cookies.</p>
+                    <div class="Ingredients"> 
+                        <p> View Ingredients </p>
+                    </div>
+                    <button class="OrderButton"> Add to basket </button>
+                </div>
+                <img loading="lazy" src="MenuImages/Cookies&CreamBrownie.png"> <br style="clear: both;">
+            </div>
+            <hr>
+            <div class="Product">
+                <div class="Description">
+                    <h2> Iced Orange Drizzle </h2>
+                    <p> Orange and polenta cake with a zesty orange soak, white chocolate and orange frosting.</p>
+                    <div class="Ingredients"> 
+                        <p> View Ingredients </p>
+                    </div>
+                    <button class="OrderButton"> Add to basket </button>
+                </div>
+                <img loading="lazy" src="MenuImages/IcedOrangeDrizzle.png"> <br style="clear: both;">
+            </div>
+        </div>
+        <div id="credits">
+            <p> Designed & Coded by Alex Tibbetts </p>
+        </div>
+    </body>
+</html>

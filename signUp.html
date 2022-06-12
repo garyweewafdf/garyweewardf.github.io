@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> CafeForHeroes - Account </title>
+        <link rel="Stylesheet" type="text/css" href="Stylesheet.css"> 
+        <link rel="icon" type="image/png" href="Images/Favicon.png">
+    </head>
+    <body>
+        <div id="NavbarBackground">
+            <div id="Navbar">
+                <div class="NavbarContent" style="margin-left: 30px;">
+                    <a href="index.html"><img src="images/hfh.png" id="NavbarImg"></a>
+                </div>
+                <div style="padding-top: 15px;">
+                    <div class="NavbarContent">
+                        <a href="menu.html"> Menu </a>
+                    </div>
+                    <div class="NavbarContent">
+                        <a href="aboutUs.html"> About Us </a>
+                    </div>
+                    <div class="NavbarContent">
+                        <a href="donate.html"> Donate </a>
+                    </div>
+                    <div class="NavbarContent">
+                        <a href="contact.html"> Contact Us </a>
+                    </div>
+                    <a href="#"><img src="Images/LogIn.jpeg" id="SignUp"></a>
+                    <br style="clear: both">
+                </div>
+            </div>
+        </div>
+
+        <div id="AccountBackground">
+            <div id="AccountFormTop">
+                <div id="AccountTopContent">
+                    <h3> Already have an Account ? </h3>
+                    <p> Click the button below to sign in </p>
+                    <div id="SignInLinkButton" onclick="displaySignIn()">
+                        <p> Sign In </p>
+                    </div>
+
+                    <script> 
+
+                    function displaySignIn(){
+                        document.getElementById('SignInSection').style.display = "block";
+                        document.getElementById('AccountTopContent').style.display = "none";
+                        document.getElementById('CreateAccountForm').style.display = "none";
+                        document.getElementById('AccountBackground').style.height = "82.5vh"; 
+                    }
+
+                    function backToCreateAccount(){
+                        document.getElementById('SignInSection').style.display = "none";
+                        document.getElementById('AccountTopContent').style.display = "block";
+                        document.getElementById('CreateAccountForm').style.display = "block";
+                        document.getElementById('AccountBackground').style.height = "";
+                        /* Above function permanetly sets height to 82.5 so we have to change it back to default */
+                    }
+
+                    </script>
+
+                    <hr style="margin: 20px auto; width: 60%;"> 
+
+                    <div id="AccountAdvantages">
+                        <h3> Why have an Account ? </h3>
+                        <div class="AccountAdvatangesLeftRight" style="color: green;">
+                            <h4> Having an Account : </h4>
+                            <p> Recieve promotions early </p>
+                            <p> More of your money is donated (5% more) </p>
+                            <p> Recieve emails with our news (optional) </p>
+                            <p> Accounts are free of charge </p>
+                            <p> Earn points towards coffees <a href="#"> CoffeePointsT&C </a></p>
+                        </div>
+                        <div class="AccountAdvatangesLeftRight" style="color: red;">
+                            <h4> Not having an Account : </h4>
+                            <p> No information about new upcoming products </p>
+                            <p> The regular percentage of your purchase amount is donated </p>
+                            <p> Will receieve no emails (not optional) </p> 
+                        </div> <br style="clear: both;">
+                    </div>
+                </div>
+                <div id="SignInSection">
+                    <form>
+                        <h2> Sign In </h2>
+                        <input type="email" class="formInput" name="email" placeholder="Email Address" required>
+                        <input type="password" class="formInput" id="Pass1" name="password" placeholder="Password" required>
+                        <div style="margin: 25px auto; width: 70%;">
+                            <input type="submit" id="SignInButton" value="Sign In">
+                            <p onclick="backToCreateAccount()" id="noAccount"> Don't have an Account ? </p>   
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <form id="CreateAccountForm" action="">
+                <h2> Personal Information </h2>
+                <input type="text" class="formInput" name="firstName" placeholder="First Name" required>
+                <input type="text" class="formInput" name="secondName" placeholder="Second Name" required>
+                <select id="country" name="country" required>
+                    <option value="Scotland">Scotland</option>
+                    <option value="Wales">Wales</option>
+                    <option value="England">England</option>
+                    <option value="Northern Ireland">Northern Ireland</option>
+                </select> 
+
+                <h2> Account Security </h2>
+                <input type="email" class="formInput" name="email" placeholder="Email Address" required>
+                <input type="password" class="formInput" id="Password" name="password" placeholder="Password" required>
+                <div class="newsQuestion" id="passReq">
+                    <h3> Check if you have a strong password </h3>
+                    <p> At strong password has at leat 8 characters & contains 1 number, 1 letter, and 1 Capital letter </p>
+                    <button onclick="checkPasswords()" id="PasswordCheckButton"> Check Password Strength </button>
+                    <div id="htmlPasswordInput" style="margin-top: 15px;"> </div>
+                </div>
+                <div class="newsQuestion">
+                    <h3> Hear from us !!! </h3>
+                    <p> Email is a great way to know about offers and what's new from Cafe for Heroes.</p> 
+                    <input type="checkbox" id="NQ">
+                    <label for="NQ"> Yes, I wish to hear about our exclusive offers, announcements and our newest products.</label>  
+                    <p> You can unsubscribe at any time. Please read our <a href="#"> Privacy Statement </a> or <a href="#"> Contact Us</a>.</p>
+                </div>
+                <div class="newsQuestion">
+                    <h3> Terms & Conditions </h3>
+                    <input type="checkbox" id="TC" required>
+                    <label for="TC"> By clicking "Create Account" you accept and agree to the following terms and policies, <a href=""> CFH Terms </a>.</label> 
+                </div>
+
+                <button type="submit" id="formButton"> Create Account </button>
+            </form>  
+        </div>
+        <div id="Icons"> 
+            <div id="CenterIcons">
+                <a><img src="Images/1.png" style="margin-right: 5%;"></a>
+                <a><img src="Images/2.jpeg" style="margin-right: 5%;"></a>
+                <a><img src="Images/3.png"></a> <br style="clear: both;">
+            </div>
+        </div> 
+        <div id="Sitemap">
+            <span id="SitemapListRight">
+            <div class="SitemapList">
+                <h3> Quick Links </h3> 
+                <p> Menu </p>
+                <p> About Us </p>
+                <p> Contact Us </p>
+                <p> Sign Up </p>
+                <p> Donate </p>
+            </div> 
+            <div class="SitemapList">
+                <h3> Menu </h3> 
+                <p> Our Coffees </p> 
+                <p> Baked Cakes </p>
+                <p> Fresh Food </p>
+            </div> 
+            <div class="SitemapList">
+                <h3> About Us </h3> 
+                <p> Our Story </p>
+                <p> Our Ethics </p>
+                <p> Why We Help Others </p>
+            </div> 
+            <div class="SitemapList">
+                <h3> Donate </h3> 
+                <p> Why Donate? </p>
+                <p> Select Donation </p>
+            </div> 
+            <div class="SitemapList">
+                <h3> Contact Us </h3> 
+                <p> Enquires </p>
+                <p> Phone Us </p>
+            </div>  
+            </span>
+            <div class="SitemapList">
+                <h3> Sign Up </h3> 
+                <p> Create Account </p>
+                <p> Sign In </p>
+                <p> Get Updates From Us </p>
+            </div> <br style="clear: both;">
+        </div>
+        <div id="credits">
+            <p> Designed & Coded by Alex Tibbetts </p>
+        </div>
+        <script src="PasswordCheck.js"></script>
+    </body>
+</html>

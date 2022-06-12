@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> CafeForHeroes - Donate </title>
+        <link rel="Stylesheet" type="text/css" href="Stylesheet.css"> 
+        <link rel="icon" type="image/png" href="Images/Favicon.png">
+    </head>
+    <body>
+        <div id="NavbarBackground">
+            <div id="Navbar">
+                <div class="NavbarContent" style="margin-left: 30px;">
+                    <a href="index.html"><img src="images/hfh.png" id="NavbarImg"></a>
+                </div>
+                <div style="padding-top: 15px;">
+                    <div class="NavbarContent">
+                        <a href="menu.html"> Menu </a>
+                    </div>
+                    <div class="NavbarContent">
+                        <a href="aboutUs.html"> About Us </a>
+                    </div>
+                    <div class="NavbarContent">
+                        <a href="#" style="color: rgb(0, 153, 255);"> Donate </a>
+                    </div>
+                    <div class="NavbarContent">
+                        <a href="contact.html"> Contact Us </a>
+                    </div>
+                    <a href="signUp.html"><img src="Images/LogIn.jpeg" id="SignUp"></a>
+                    <br style="clear: both">
+                </div>
+            </div>
+        </div>
+        <div id="donateBody">
+            <div id="donateRight">
+                <h2> Donate </h2>
+                <p> By donating you will be helping soldiers who are serving or who have retired and are strugling. </p>
+            </div> <br style="clear: both;">
+        </div>
+        <div style="min-height: 100vh; background-color: white; padding: 2% 0; text-align: center;">
+            
+            <h2 style="font-size: 40px;"> Help by Donating </h2> 
+            <p style="font-size: 20px; letter-spacing: 2px; margin-bottom: 5%;"> If you wish to help by donating, please select the donation you wish to help with by clicking on the donation below </p>
+            
+            <div style="width: 80%; margin: 0 auto;">
+                <div class="donationTab" id="donation1" onclick="donation1()" style="margin-right: 9.5%;" required>
+                    <div class="donationMoneyCircle">
+                        <h2> £20 </h2>
+                    </div>
+                    <p> Can pay for a phone call with one of our support workers - a lifeline to a veteran who feels alone </p>
+                </div>
+                <div class="donationTab" id="donation2" onclick="donation2()" style="margin-right: 9.5%;" required>
+                    <div class="donationMoneyCircle">
+                        <h2> £50 </h2>
+                    </div>
+                    <p> Can support a veteran struggling with their mental health by providing a one-hour consultation with a member of our Hidden Wounds Team </p>
+                </div>
+                <div class="donationTab" id="donation3" onclick="donation3()" required>
+                    <div class="donationMoneyCircle">
+                        <h2> £100 </h2>
+                    </div>
+                    <p> Can support a veteran struggling with their mental health by providing a one-hour consultation with a member of our Hidden Wounds Team </p>
+                </div> <br style="clear: both;">
+
+                <form id="bankForm" action="">
+                    <h3> Bank Details </h3>
+                    <input type="txt" class="bankFormInput" name="name" placeholder="Full Name on Card" required>
+                    <input type="txt" class="bankFormInput" name="cardNum" placeholder="Card Number" required>
+                    <input type="txt" class="bankFormInput" name="expireDate" placeholder="Card Expire Date" required>
+                    <input type="password" class="bankFormInput" name="bankDigit" placeholder=" 3-digit Pin Code " required><br>
+                    <input type="submit" id="formButton" value="Donate">
+                </form>
+            </div>
+        </div>
+        <script>
+
+            function donation1(){
+                document.getElementById('donation1').style.background = "red";
+                document.getElementById('donation2').style.background = "rgb(0, 0, 157)";
+                document.getElementById('donation3').style.background = "rgb(0, 0, 157)";
+            }
+
+            function donation2(){
+                document.getElementById('donation1').style.background = "rgb(0, 0, 157)";
+                document.getElementById('donation2').style.background = "red";
+                document.getElementById('donation3').style.background = "rgb(0, 0, 157)";
+            }
+
+            function donation3(){
+                document.getElementById('donation1').style.background = "rgb(0, 0, 157)";
+                document.getElementById('donation2').style.background = "rgb(0, 0, 157)";
+                document.getElementById('donation3').style.background = "red";
+            }
+
+        </script>
+        <div id="Icons"> 
+            <div id="CenterIcons">
+                <a><img src="Images/1.png" style="margin-right: 5%;"></a>
+                <a><img src="Images/2.jpeg" style="margin-right: 5%;"></a>
+                <a><img src="Images/3.png"></a> <br style="clear: both;">
+            </div>
+        </div> 
+        <div id="Sitemap">
+            <span id="SitemapListRight">
+            <div class="SitemapList">
+                <h3> Quick Links </h3> 
+                <p> Menu </p>
+                <p> About Us </p>
+                <p> Contact Us </p>
+                <p> Sign Up </p>
+                <p> Donate </p>
+            </div> 
+            <div class="SitemapList">
+                <h3> Menu </h3> 
+                <p> Our Coffees </p> 
+                <p> Baked Cakes </p>
+                <p> Fresh Food </p>
+            </div> 
+            <div class="SitemapList">
+                <h3> About Us </h3> 
+                <p> Our Story </p>
+                <p> Our Ethics </p>
+                <p> Why We Help Others </p>
+            </div> 
+            <div class="SitemapList">
+                <h3> Donate </h3> 
+                <p> Why Donate? </p>
+                <p> Select Donation </p>
+            </div> 
+            <div class="SitemapList">
+                <h3> Contact Us </h3> 
+                <p> Enquires </p>
+                <p> Phone Us </p>
+            </div>  
+            </span>
+            <div class="SitemapList">
+                <h3> Sign Up </h3> 
+                <p> Create Account </p>
+                <p> Sign In </p>
+                <p> Get Updates From Us </p>
+            </div> <br style="clear: both;">
+        </div>
+        <div id="credits">
+            <p> Designed & Coded by Alex Tibbetts </p>
+        </div>
+    </body>
+</html

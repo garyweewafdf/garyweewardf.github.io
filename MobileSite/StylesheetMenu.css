@@ -1,0 +1,135 @@
+
+body {
+    font-family: sans-serif;
+}
+
+#TopLogo img {
+    width: 30%;
+}
+
+#TopLogo {
+    text-align: center;
+    background-color: white;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+    text-align: center;
+}
+
+.Ingredients {
+    display: inline-block;
+    margin: 0 auto 5%;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #333;
+}
+
+.Ingredients:active {
+    background-color: rgb(89, 89, 89);
+}
+
+.Ingredients P {
+    color: white;
+    font-size: 0.8em;
+    margin: 0; 
+}
+  
+.topnav #myLinks {
+    display: none; /* All links are hidden apart from the top link */
+}
+  
+.topnav a {
+    color: white;
+    padding: 6%;
+    text-decoration: none;
+    font-size: 1.1em;
+    display: block;
+}
+
+.topnav p {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+  
+.topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#MenuBody {
+    padding: 8% 0 2.5%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(MenuImages/MenuBackground.png);
+}
+
+.Product {
+    width: 98%;
+    margin: 5% auto;
+    padding: 5% 0;
+}
+
+.Description {
+    width: 45%;
+    margin-right: 5%;
+    float: left;
+    font-size: 12px;
+    text-align: center;
+}
+
+.Description h2 {
+    font-size: 15px;
+    margin-top: 0;
+}
+
+.Product img {
+    width: 45%;
+    border-radius: 50%;
+}
+
+.OrderButton {
+    width: 90%;
+    background-color: white;
+    padding: 2px 20px;
+    font-size: 12px;
+    border: 1px solid #333;
+}
+
+.OrderButton:active {
+    background-color: silver;
+}
+
+.Category {
+    margin: 0 auto;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 1em;
+    width: 60%;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+}
+
+hr {
+    width: 20%;
+    margin: 0 auto;
+    background-color: grey;
+    border: 1px solid #333;
+    border-radius: 10%;
+}
+
+#credits {
+    background-color: rgb(25, 25, 25);
+    font-size: .4em;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+}
+  
+  

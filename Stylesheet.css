@@ -1,0 +1,770 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: rgb(238, 238, 238);
+    width: 100%;
+    height: 100%;
+}
+
+#TopLink {
+    text-align: center;
+    background-color: black;
+    padding: .25% 0;
+}
+
+#TopLink a {
+    margin: 0;
+    color: white;
+}
+
+#slideshowImg {
+    background-image: url(Images/Slideshow/1.jpg);
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    transition: background 0.5s linear; 
+}
+
+#HomeTitle {
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    padding: 2% 0;
+    color: white;
+    box-shadow: 0px 10px 10px 0px black;
+}
+
+#HomeTitle h2 {
+    margin: 0;
+    font-size: 35px;
+    letter-spacing: 4px;
+}
+
+#HomeTitle p {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+hr {
+    width: 65%;
+    margin: 50px auto 0;
+    border: 1px solid rgb(96, 95, 95);
+    opacity: 0.5;
+}
+#Navbar {
+    background-color: white;
+    font-weight: bold;
+    width: 100%;
+    margin: 0 auto; 
+}
+
+#NavbarImg {
+    height: 50px;
+    transition: 1s;
+}
+
+#NavbarImg:hover {
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+.NavbarContent {
+    font-size: 15px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    float: left;
+    padding: 0;
+    text-align: left;
+    text-decoration: none;
+    transition: 1s;
+    margin: 20px;
+}
+
+
+#Navbar .NavbarContent:hover a {
+    color: rgb(0, 153, 255);
+    transition: 1s;
+}
+
+
+#Navbar a {
+    font-weight: lighter;
+    transition: 1s;
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+#SignUp {
+    height: 30px;
+    float: right;
+    margin-top: 15px;
+    margin-right: 150px;
+    cursor: pointer;
+}
+
+#SignUp:hover {
+    transform: scale(120%);
+}
+
+#indexStillBack {
+    background-image: url(Images/accountBackground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 150px 0;
+}
+
+#CoffeeHome {
+    width: 65%;
+    margin: 0 auto 100px;
+}
+
+.CoffeeContent {
+    text-align: center;
+    width: 25%; 
+    padding: 2% 1%;
+    background-color: white;
+    box-shadow: 0px 3px 20px 2px black;
+    float: left;
+}
+
+#menuLinkButton {
+    background-color: rgb(201, 236, 250);
+    text-align: center;
+    width: 25%;
+    padding: 1%;
+    border: 1px solid black;
+    box-shadow: 0px 3px 20px 3px black;
+    margin: 25px 0;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#menuLinkButton:hover  {
+    transition: 1s;
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.CoffeeContent img {
+    width: 85%;
+    max-height: 300px;
+}
+
+#CoffeeButton {
+    letter-spacing: 2px;
+    padding: 15px 0;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 25px;
+    margin: 20px auto 0;
+    max-width: 200px;
+    transition: 1s;
+    border: 1px solid rgb(13, 13, 214);
+}
+
+#CoffeeButton a {
+    text-decoration: none;
+    color: rgb(13, 13, 214);
+}
+
+#CoffeeButton:hover {
+    transition: 1s;
+    box-shadow: 0px 0px 5px 0px rgb(13, 13, 214);
+}
+
+#AboutCoffee {
+    width: 83%;
+    margin:  180px auto 0;
+    background-color: white; 
+}
+
+#AboutTxtLeft {
+    text-align: center;
+    padding: 2.5%;
+    width: 45%;
+    float: left;
+}
+
+#AboutImg {
+    width: 45%;
+    margin: 2.5%;
+    float: left;
+}
+
+#CoffeeCenter:hover p {
+    transition: 1s;
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+#AboutCoffee p {
+    font-size: 14px;
+}
+
+#Icons img {
+    width: 30%;
+    border-radius: 35%;
+    float: left;
+    cursor: pointer;
+}
+
+#Icons {
+    background-color: rgb(61, 61, 61);
+    padding: 2% 0;
+}
+
+#credits {
+    background-color: rgb(25, 25, 25);
+    padding: .5% 0;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+}
+
+#CenterIcons {
+    width: 15%;
+    margin: 0 auto;
+}
+
+#Icons img:hover {
+    transform: scale(90%);
+}
+
+#Sitemap {
+    background-color: black;
+    color: white;
+}
+
+.SitemapList {
+    width: 13%;
+    float: left;
+    text-align: left;
+    padding: 1%;
+}
+
+.SitemapList h3 , .SitemapList p {
+    font-weight:lighter;
+    letter-spacing: 1px;
+}
+
+.SitemapList h3 {
+    text-decoration: underline;
+}
+
+#SitemapListRight .SitemapList {
+    margin-right: 2%;
+}
+
+#OthersFlag {
+    filter: grayscale(50%);
+    opacity: 0.8;
+    width: 35%;
+    max-height: 90%;
+    margin: 2.5% 0 2.5% 5%;
+    float: left;
+}
+
+#OthersRight {
+    width: 50%;
+    margin: 2.5% 5% 2.5% 0;
+    height: 90%;
+    float: right;
+}
+
+#Others {
+    width: 100%;
+    height: 105vh;
+    position: relative;
+    background-image: url(Images/Soldier2.jpeg);
+    background-size: cover;
+}
+
+.OthersBoxes img {
+    width: 100%;
+    max-height: 200px;
+}
+
+.OthersBoxes {
+    opacity: 0.85;
+    box-shadow: 0px 3px 20px 2px black;
+    background-color: white;
+    float: left;
+    width: 47.5%;
+    max-height: 375px;
+    transition: 1s;
+}
+
+.OthersBoxes:hover {
+    opacity: 1;
+    box-shadow: 0px 3px 20px 5px black;
+    transition: 1s;
+    transform: scale(1.05);
+}
+
+.BoxesTxt {
+    padding: 2.5% 5% 5%;
+}
+
+#BoxesButton {
+    letter-spacing: 2px;
+    padding: 5px 0;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 25px;
+    margin-top: 5px;
+    max-width: 200px;
+    transition: 1s;
+    border:  1px solid rgb(129, 200, 228);
+}
+
+#BoxesButton a {
+    text-decoration: none;
+    color: rgb(129, 200, 228);
+    transition: 1s;
+}
+
+#BoxesButton:hover {
+    background-color:rgb(129, 200, 228);
+    transition: 1s;
+}
+
+#BoxesButton:hover a {
+    color: white;
+}
+
+#Partnerships {
+    background-image: url(Images/PartnerBackground.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 50px;
+    text-align: center;
+}
+
+#Partnerships img {
+    width: 100%;
+}
+
+#PartnershipsCenter {
+    width: 15%;
+    margin: 0 auto;
+}
+
+#MenuTop {
+    background-image: url(Images/MenuTop.png);
+    min-height: 30vh;
+    padding-top: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#MenuBody {
+    background-image: url(Images/MenuImages/MenuBackground.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 50px 0;
+}
+
+#MenuWidth {
+    width: 1020px; 
+    margin: 0 auto; 
+}
+
+#MenuTopTxt {
+    padding: 10px;
+    width: 480px;
+    text-align: center;
+    height: 200px;
+    height: 100%;
+}
+
+#MenuTopTxt p {
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+#MenuTopTxt h2 {
+    letter-spacing: 3px;
+    font-size: 40px;
+}
+
+.MenuImages img {
+    width: 100%;
+    transition: 1s;
+}
+
+.MenuImages {
+    width: 75%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.MenuProduct {
+    cursor: pointer;
+    width: 17%;
+    padding: 2.5%;
+    background-color:white;
+    box-shadow: 0px 3px 20px 2px black;
+    float: left;
+    margin-top: 25px;
+}
+
+.Ingredients {
+    display: inline-block;
+    margin: 0 auto 5%;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #333;
+}
+
+.Ingredients:active {
+    background-color: rgb(89, 89, 89);
+}
+
+.Ingredients P {
+    color: white;
+    font-size: 0.8em;
+    margin: 0; 
+}
+
+.MenuHeaders {
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.MenuDescription {
+    font-size: 14px;
+}
+
+.MenuProduct:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 3px 30px 2px black;
+}
+
+.MenuTitles {
+    font-size: 30px;
+    letter-spacing: 5px;
+    background-color: white;
+    border: 3px solid black;
+    padding: 5px 20px;
+    display: inline-block;
+
+}
+
+.MenuOrderButton {
+    font-size: 20px;
+    letter-spacing: 3px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 2px 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.MenuOrderButton:hover {
+    transform: scale(1.05);
+    background-color: rgb(235, 233, 233);
+}
+
+#AboutUsTop {
+    background-image: url(https://d36bl1cjgcfngd.cloudfront.net/wp-content/uploads/sites/2/2020/01/22173756/Our-Story.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 8% 0 8% 15%;
+}
+
+#AboutUsTop h2 {
+    color: white;
+    font-weight: lighter;
+    letter-spacing: 6px;
+    font-size: 55px;
+    display: inline-block;
+}
+
+.AboutUsContainers {
+    width: 85%;
+    margin: 5% auto;
+}
+
+.AboutUsImage {
+    width: 50%;
+    float: left;
+}
+.AboutUsAllTxt {
+    float: left;
+    width: 45%;
+}
+
+#AboutUsTxtRight {
+    text-align: left;
+    padding: 2% 2.5%;
+}
+
+#AboutUsTxtLeft {
+    text-align: right;
+    padding: 2% 2.5%; 
+}
+
+.AboutUsContainers h2 {
+    margin: 0;
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: lighter;
+}
+
+.AboutUsContainers p {
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+#AboutUsHelp {
+    background-color: rgb(61, 61, 61);
+    color: white;
+    text-align: center;
+    padding: 0 0 2% 0;
+}
+
+#AboutDonateTxt , #WasteTxt {
+    width: 60%;
+    margin: 2.5% auto 0;
+}
+
+#AboutUsBottom {
+    background-image: url(Images/PartnerBackground.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 5% 0;
+}
+
+#AccountBackground {
+    background-image: url(Images/accountBackground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 25px;
+}
+
+#CreateAccountForm , #AccountFormTop {
+    background-color: white;
+    box-shadow: 0px 3px 20px 2px black;
+    padding: 20px;
+    width: 60%;
+    margin: 0 auto 25px;
+    color: grey;
+    text-align: center;
+}
+
+#CreateAccountForm h2 {
+    font-size: 30px;
+}
+
+#AccountAdvantages {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.AccountAdvatangesLeftRight {
+    float: left;
+    width: 50%;
+}
+
+.AccountAdvatangesLeftRight h4 {
+    font-size: 20px;
+}
+
+#SignInLinkButton {
+   border: 1px solid black;
+   width: 15%;
+   margin: 0 auto;
+   cursor: pointer;
+   background-color: white;
+   font-size: 15px;
+}
+
+.formInput, #country , .bankFormInput {
+    width: 90%;
+    padding: 10px 20px;
+    border: none;
+    border-bottom: 3px solid rgb(129, 200, 228);
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.newsQuestion {
+    margin: 0 auto;
+    width: 90%;
+    padding: 2% 5% 5%;
+}
+
+#formButton {
+    width: 75%;
+    margin: 30px auto 0;
+    padding: 20px 0;
+    cursor: pointer;
+    background-color: white;
+    font-size: 15px;
+    border-color: black;
+}
+
+#SignInButton {
+    padding: 20px 0;
+    cursor: pointer;
+    background-color: white;
+    font-size: 15px;
+    width: 50%;
+    margin-bottom: 20px;
+    border-color: black;
+}
+
+#formButton:hover , #SignInLinkButton:hover, #SignInButton:hover, #donateOnClick:hover {
+    transform: scale(105%);
+    background-color: rgb(201, 236, 250);
+}
+
+#SignInSection {
+    display: none;
+}
+
+#noAccount {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#noAccount:hover {
+    color:rgb(178, 224, 242)
+}
+
+#donateBody {
+    background-image: url(Images/bodyBackground.png);
+    padding: 8% 15% 8% 0;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+#donateRight {
+    float: right;
+    width: 40%;
+    text-align: center;
+}
+
+#donateRight h2 {
+    font-weight: lighter;
+    letter-spacing: 6px;
+    font-size: 55px;
+    display: inline-block;
+}
+
+#donateRight p {
+    font-size: 20px; 
+    letter-spacing: 2px; 
+}
+
+.donationTab {
+    float: left;
+    width: 25%;
+    padding: 5% 1%;
+    color: white;
+    background-color: rgb(0, 0, 157);
+    cursor: pointer;
+    height: 400px;
+    box-shadow: 0px 3px 20px 2px black;
+}
+
+.donationMoneyCircle {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    margin: 0 auto 15%;
+    padding: 2%;
+}
+
+.donationMoneyCircle p {
+    margin: 0;
+}
+
+.donationMoneyCircle h2 {
+    margin-top: 30%;
+    font-size: 50px;
+}
+
+.donationTab:required {
+    background-color: red;
+}
+
+#bankForm {
+    width: 80%;
+    margin: 5% auto;
+}
+
+.bankFormInput {
+    width: 50%;
+}
+
+#PasswordCheckButton {
+    padding: 1% 5%;
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: rgb(238, 238, 238);
+}
+
+#formButton {
+    width: 20%;
+}
+
+#PasswordCheckButton:hover {
+    background-color: rgb(185, 184, 184);
+}
+
+#contact {
+    width: 100%;
+    float: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(Images/contactright.jpg);
+}
+
+#contactTop {
+    text-align: center;
+    background-color: rgb(61, 61, 61);
+    color: white;
+    padding: 1% 5%;
+}
+
+#contactDetails {
+    width: 45%;
+    margin: 0 auto;
+    padding: 5% 0;
+}
+
+#contactTop h2 {
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+#contactDetails h3 {
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+#contactDetails p, #contactTop p {
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+
+
