@@ -1,5 +1,5 @@
 window.onload = function run(){
-    const images = ['Url(Images/Slideshow/1.jpg)', 'Url(Images/Slideshow/2.jpg)', 'Url(Images/Slideshow/3.jpg)', 'Url(Images/Slideshow/4.jpg)'];
+    const images = ['Url(Images/Slideshow/Made1.png)', 'Url(Images/Slideshow/Made2.png)', 'Url(Images/Slideshow/Made3.png)', 'Url(Images/Slideshow/Made4.png)'];
 
     function delay(time) {
         return new Promise(resolve => setTimeout(resolve, time));
